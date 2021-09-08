@@ -6,8 +6,8 @@ Primeiro portifolio Front-end
 O Controle das tarefas desse projeto sera realizado no GitHub
 
 ## Icones 
-:package: nova funcionalidade
-:up: atualizacao
-:beatle: correcao de bugs
-:checkered_flag: release
+- :package: nova funcionalidade \n
+- :up: atualizacao 
+- :beetle: correcao de bugs
+- :checkered_flag: release
 
