@@ -13,7 +13,7 @@
     <title>FrontDev Brayan</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" onload="erro()">
 
         <div class="hamburguer">
             <div class="line" id="line1"></div>
@@ -28,7 +28,7 @@
             <div class="banner">
                 <h1>Font-end & web developer</h1>
                 <p>Brayan Igor Fiola Maximiano</p>
-                <button id="btn1">Saiba Mais</button>
+                <button id="curriculo" onclick="curriculo()">curriculo</button>
             </div>
             <h1>Front-end & web developer</h1>
             <p>Brayan Igor Fiola Maximiano</p>
@@ -45,9 +45,9 @@
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-github"></a>
-                <a href="#" class="fab fa-instagram-square"></a>
+                <a href="https://www.facebook.com/brayan.igor.5/" class="fab fa-facebook"></a>
+                <a href="https://github.com/BrayanMaximiano" class="fab fa-github"></a>
+                <a href="https://www.instagram.com/brayan.igor/" class="fab fa-instagram-square"></a>
             </div>
 
         </aside>
@@ -127,7 +127,7 @@
                         <h2>Spotify Clone</h2>
                         <h3>HTML,CSS e JavaScript</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro tempora optio totam, cupiditate suscipit labore ab asperiores commodi rerum fuga minima recusandae aut laborum nobis, placeat nihil vitae esse!</p>
-                        <button class="btn">Saiba Mais</button>
+                        <button id="proj1" class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -136,7 +136,7 @@
                         <h2>CloneFlix</h2>
                         <h3>ReactJS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa, iste hic, quibusdam quo necessitatibus cupiditate officia tenetur temporibus itaque saepe nostrum maxime vitae laboriosam placeat odit rerum cumque? Optio?</p>
-                        <button class="btn">Saiba Mais</button>
+                        <button  id="proj2" class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -145,10 +145,10 @@
                         <h2>PetShop</h2>
                         <h3>ReactJS</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iure, quis officia corporis sit aperiam recusandae repellat corrupti pariatur delectus vitae facilis optio, doloribus sunt illo alias odit? Ipsam, dignissimos?</p>
-                        <button class="btn">Saiba Mais</button>
+                        <button id="proj3" class="btn off">Saiba Mais</button>
                     </div>
                 </div>
-                <button class="more-proj">Mais projetos</button>
+                <button id="more-proj" class="more-proj">Mais projetos</button>
             </div>
         </section>
         <section id="contato" class="sessao-contato">
@@ -158,7 +158,7 @@
                </div>
                <div class="contato-right">
                    <h1>Contato</h1>
-                   <form > 
+                   <form id="formulario" name="contato-portifolio" method="POST" action="/" data-netlify="true"> 
                        <div class="input-group">
                            <input type="text" class="field" id="nome">
                            <label for="nome" class="field-label">Nome</label>
@@ -171,7 +171,7 @@
                         <textarea id="mensagem" class="field"></textarea>
                         <label for="mensagem" class="field-label">Mensagem</label>
                     </div>
-                    <button class="btn btn-submit" type="submit">Enviar</button>
+                    <button id="contato" class="btn btn-submit " type="button">Enviar</button>
 
                    </form>
                </div>
@@ -182,9 +182,9 @@
                 <p>Copyrhight &copy; 2021, Brayan Igor Fiola Maximiano - Todos os direitos reservados</p>
                 <div class="social-list">
                     <ul>
-                        <li class="ul"><a href=""><i class="fab fa-facebook"></i></a></li>
-                        <li class="ul"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="ul"></li><a href=""><i class="fab fa-github"></i></a></li>
+                        <li class="ul"><a href="https://www.facebook.com/brayan.igor.5/"><i class="fab fa-facebook"></i></a></li>
+                        <li class="ul"><a href="https://www.instagram.com/brayan.igor/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="ul"></li><a href="https://github.com/BrayanMaximiano"><i class="fab fa-github"></i></a></li>
 
                     </ul>
                 </div>
