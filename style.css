@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,600;1,200;1,300&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +6,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 
 :root{
     --font-primary:"Baloo Da 2", serif;
@@ -20,7 +20,7 @@
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     right: 5rem;
     top: 5rem;
     display: flex;
@@ -150,6 +150,8 @@ header{
     opacity: 0;
 
 }
+
+
 .banner button:hover{
     opacity: 0.8;
 }
@@ -161,6 +163,7 @@ header{
     top: 0;
     right: -20rem;
     transition: .7s;
+    z-index: 999;
 }
 .show-menu .sidebar{
     right: 0;
@@ -300,6 +303,7 @@ header{
     width: 25rem;
     height: 35rem;
     position: relative;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
     
 }
 
@@ -405,6 +409,151 @@ header{
     color: white;
     border-radius: 5px;
 }
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    display: flex;
+    height: 40rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left{
+    width: 35%;
+    background: 
+        linear-gradient(to top, #e100ff50, #8000ffc0), 
+        url(img/contato.jpg);
+    background-size: cover;
+}
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem ;
+}
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.input-group{
+    position: relative;
+}
+.input-group textarea{
+    padding-top: 1rem;
+    resize: none;
+    
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 30rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    border-bottom: dashed 2px #636363;
+    height: 3rem;
+    outline: none; 
+    margin: 1rem 0;
+}
+.field-label{
+    position: absolute;
+    left: 0;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1.7rem;
+    
+}
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+}
+.field:focus{
+    border-bottom: var(--color-default)solid;
+}
+.btn{
+    width: 8rem;
+    height: 2.5rem;
+    background: #7F00FF;  /* navegadores antigos */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #eee;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    border: none;
+}
+.btn-submit{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content p{
+    font-family: var(--font-secondary);
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+.social-list ul{
+    display: flex;
+}
+
+#link-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #7F00FF;  /* navegadores antigos */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #0000009;
+}
+
 
 /*----------------animacoes--------------*/
 @keyframes zoom{

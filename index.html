@@ -21,14 +21,14 @@
             <div class="line" id="line3"></div>
             <span>fechar</span>
         </div>
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="img/bg.jpg" >
             </div>
             <div class="banner">
                 <h1>Font-end & web developer</h1>
                 <p>Brayan Igor Fiola Maximiano</p>
-                <button>Saiba Mais</button>
+                <button id="btn1">Saiba Mais</button>
             </div>
             <h1>Front-end & web developer</h1>
             <p>Brayan Igor Fiola Maximiano</p>
@@ -37,11 +37,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,7 +51,7 @@
             </div>
 
         </aside>
-        <section class="sessao-conhecimentos">
+        <section id="conhecimentos" class="sessao-conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -116,7 +116,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section id="projetos" class="sessao-projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -127,7 +127,7 @@
                         <h2>Spotify Clone</h2>
                         <h3>HTML,CSS e JavaScript</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro tempora optio totam, cupiditate suscipit labore ab asperiores commodi rerum fuga minima recusandae aut laborum nobis, placeat nihil vitae esse!</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -136,7 +136,7 @@
                         <h2>CloneFlix</h2>
                         <h3>ReactJS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa, iste hic, quibusdam quo necessitatibus cupiditate officia tenetur temporibus itaque saepe nostrum maxime vitae laboriosam placeat odit rerum cumque? Optio?</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -145,14 +145,54 @@
                         <h2>PetShop</h2>
                         <h3>ReactJS</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iure, quis officia corporis sit aperiam recusandae repellat corrupti pariatur delectus vitae facilis optio, doloribus sunt illo alias odit? Ipsam, dignissimos?</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <button class="more-proj">Mais projetos</button>
             </div>
         </section>
+        <section id="contato" class="sessao-contato">
+           <div class="contato-wrapper">
+               <div class="contato-left">
 
+               </div>
+               <div class="contato-right">
+                   <h1>Contato</h1>
+                   <form > 
+                       <div class="input-group">
+                           <input type="text" class="field" id="nome">
+                           <label for="nome" class="field-label">Nome</label>
+                       </div>
+                       <div class="input-group">
+                        <input type="text" class="field" id="email">
+                        <label for="email" class="field-label">E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="mensagem" class="field"></textarea>
+                        <label for="mensagem" class="field-label">Mensagem</label>
+                    </div>
+                    <button class="btn btn-submit" type="submit">Enviar</button>
 
+                   </form>
+               </div>
+           </div> 
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>Copyrhight &copy; 2021, Brayan Igor Fiola Maximiano - Todos os direitos reservados</p>
+                <div class="social-list">
+                    <ul>
+                        <li class="ul"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="ul"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="ul"></li><a href=""><i class="fab fa-github"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 <script src="script.js"></script>
